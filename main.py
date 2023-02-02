@@ -25,7 +25,7 @@ elif test.lower() == "pwd":
     file = open("password.json","r")
     track = file.read()
     file.close()
-    if "password" not in eval(track):
+    if "password" not in track:
         reset = {"password": []}
     else:
         reset = eval(track)
@@ -37,4 +37,3 @@ elif test.lower() == "pwd":
         file.close()
     else:
         print("you already added this password")
-        
